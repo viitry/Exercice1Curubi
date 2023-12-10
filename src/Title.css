@@ -1,0 +1,46 @@
+.title {
+    padding-left: 10%;
+    padding-top: 5%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: azure;
+    text-align: left;
+}
+
+.title span {
+    position: relative;
+    z-index: 0;
+    padding: 5px;
+    width: 11%;
+    flex-grow: 1;
+    color: azure;
+    text-align: center;
+    font-size: small;
+}
+
+
+.title span:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 37%;
+    height: 1.5px;
+    background-color: rgb(243, 98, 98);
+    opacity: 0.5;
+    transform: translateY(-50%);
+}
+
+.title span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 37%;
+    height: 1.5px;
+    background-color: rgb(243, 98, 98);
+    opacity: 0.5;
+    transform: translateY(-50%);
+}
